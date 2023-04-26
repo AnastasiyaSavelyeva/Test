@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<form action="https://webhook.site/b929aca2-47ff-4fb7-9a64-33ec22a269d0" method="get">
+    <div>
+        <label>
+            Имя:
+            <input type="text" name="name" placeholder="Иван" required>
+        </label>
+    </div>
+    <br>
+    <div>
+        <label>
+            Фамилия:
+            <input type="text" name="surname" placeholder="Иванов" required>
+        </label>
+    </div>
+    <br>
+    <div>
+        <label>
+            Ваш пол:
+        <select name="gender">
+            <option value="male">
+                Мужской
+            </option>
+            <option value="female">
+                Женский
+            </option>
+        </select>
+        </label>
+    </div>
+    <div>
+        Ваши направления:
+        <label>
+            <input type="checkbox" name="direction[]" value="disign">Веб-дизайн
+        </label>
+        <label>
+            <input type="checkbox" name="direction[]" value="development">Веб-разработка
+        </label>
+        <label>
+            <input type="checkbox" name="direction[]" value="testing">Тестирование
+        </label>
+    </div>
+    <br>
+    <div>
+        Ваш опыт:
+        <label>
+            <input type="radio" name="experience" value="1" required>Менее 2 лет
+        </label>
+        <label>
+            <input type="radio" name="experience" value="2" required>От 2 до 5 лет
+        </label>
+        <label>
+            <input type="radio" name="experience" value="3" required>Более 5 лет
+        </label>
+    </div>
+    <br>
+    <div>
+        <label>
+            Расскажите о себе:
+            <textarea name="info" cols="30" rows="10" required></textarea>
+        </label>
+    </div>
+    <br>
+    <div>
+        <label>
+            <input type="checkbox" name="agreed" value="1"> Я согласен на рассылку
+        </label>
+    </div>
+    <div>
+        <button type="submit">Отправить</button>
+        <button type="reset">Сброс</button>
+    </div>
+</form>
+
+
+</body>
+</html>
